@@ -10,6 +10,5 @@ urlpatterns = [
     path('api/', include('content.urls')),  # Include URLs from the content app
 ]
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  # Correct the parameter name
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_ROOT, documents_root= settings.STATIC_ROOT)
