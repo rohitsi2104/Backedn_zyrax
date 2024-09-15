@@ -27,8 +27,8 @@ DATABASE_URL = 'postgresql://postgres:RcbamjLYuaPjxBZeSCfLcaBEnVnBxkuz@autorack.
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'http://localhost']
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # Your React app's URL
 ]
