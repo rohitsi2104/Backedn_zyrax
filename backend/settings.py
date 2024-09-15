@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--1k6mky39+c_8lp5yl_ji5)a&7gnsomz!=e7gob9(kcol#rr7w
 DATABASE_URL = 'postgresql://postgres:RcbamjLYuaPjxBZeSCfLcaBEnVnBxkuz@autorack.proxy.rlwy.net:17455/railway'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['.vercel.app','localhost', '127.0.0.1']
