@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure--1k6mky39+c_8lp5yl_ji5)a&7gnsomz!=e7gob9(kcol#rr7w
 DATABASE_URL = 'postgresql://postgres:RcbamjLYuaPjxBZeSCfLcaBEnVnBxkuz@autorack.proxy.rlwy.net:17455/railway'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-# ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['.vercel.app']
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # Your React app's URL
 ]
