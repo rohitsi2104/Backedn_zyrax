@@ -9,6 +9,13 @@ from .serializers import BannerSerializer, OfferSerializer
 from django.contrib.auth.models import User
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
+from django.shortcuts import render
+
+
+def homepage_view(request):
+    return render(request, 'readme.html')
+
+
 # Banner View
 @api_view(['GET'])
 @permission_classes([AllowAny])

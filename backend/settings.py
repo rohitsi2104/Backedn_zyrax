@@ -27,7 +27,8 @@ DATABASE_URL = 'postgresql://postgres:RcbamjLYuaPjxBZeSCfLcaBEnVnBxkuz@autorack.
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'http://localhost:3000']
+ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'http://localhost']
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # Your React app's URL
 ]
@@ -74,7 +75,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -146,6 +147,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 
 # Default primary key field type
